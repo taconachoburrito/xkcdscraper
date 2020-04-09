@@ -1,2 +1,2 @@
 # xkcdscraper
-Downloads certain number of xkcd Comics
+Downloads certain number of random xkcd Comics
