@@ -5,9 +5,9 @@ import os
 import urllib.request
 import webbrowser
 
-startInt = random.randint(1, 1000)
+startInt = random.randint(1, 2187)
 
-print('How many comics do you want?')
+print('How many comics do you want(1-100)')
 numCom = input()
 print('And do you wish to save them(y|n):')
 save = input()
