@@ -21,8 +21,9 @@ for i in range(startInt, startInt + int(numCom)):
     res = requests.get('https://xkcd.com/' + str(i))
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     elem = soup.select('#ctitle')
-    nameOfFile = elem[0].text.replace(' ', '_').lower()
+    nameOfFile = elem[0].text.replace(' ', '_').replace('\'', '').lower()
     webbrowser.open('https://imgs.xkcd.com/comics/' + nameOfFile + '.png')
+    print(nameOfFile)
     if save.lower() == 'y':
         urllib.request.urlretrieve(
             'https://imgs.xkcd.com/comics/' + nameOfFile + '.png', '.\\pics\\' + nameOfFile + '.png')
