@@ -25,5 +25,5 @@ for i in range(startInt, startInt + int(numCom)):
     webbrowser.open('https://imgs.xkcd.com/comics/' + nameOfFile + '.png')
     if save.lower() == 'y':
         urllib.request.urlretrieve(
-            'https://imgs.xkcd.com/comics/' + nameOfFile + '.png', '.\\pics\\' + nameOfFile + '.png')
+            'https://imgs.xkcd.com/comics/' + nameOfFile + '.png', './pics/' + nameOfFile + '.png')
         print(nameOfFile + ' comic saved!')
